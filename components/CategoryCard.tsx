@@ -1,10 +1,12 @@
+'use client'; // Add this at the top
+
 interface CategoryCardProps {
   title: string;
   description: string;
   progress: number;
   totalTopics: number;
   icon: string;
-  onSelect: () => void;
+  onSelect?: () => void;
 }
 
 export default function CategoryCard({
@@ -19,7 +21,7 @@ export default function CategoryCard({
   
   return (
     <div 
-      className="border rounded-lg p-6 cursor-pointer hover:bg-gray-50 transition-colors"
+      className={`border rounded-lg p-6 transition-colors ${onSelect ? 'cursor-pointer hover:bg-gray-50' : ''}`}
       onClick={onSelect}
     >
       <div className="flex items-center gap-4 mb-3">

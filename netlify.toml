@@ -5,9 +5,6 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-[build.environment]
-  NEXT_PRIVATE_TARGET = "server"
-
 [[redirects]]
   from = "/*"
   to = "/index.html"
