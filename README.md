@@ -1,4 +1,4 @@
-# 🛡️ ThreatSwipe
+# 🛡️(PROTOTYPE) ThreatSwipe
 
 A fun and interactive cybersecurity learning tool that helps you memorize essential security concepts through true/false flashcards.
 
